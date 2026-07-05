@@ -1,21 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #000080;
+  /* Paleta basada en logo sindicato.jpg */
+  --color-primary: #0060AA;    /* Azul Principal */
+  --color-text-navy: #000080;  /* Azul Oscuro para textos */
+  --color-accent-red: #CC0000; /* Rojo para acentos */
+  --color-bg-light: #F9FAFB;   /* Gris muy claro para secciones */
+  
+  --background: #ffffff;
+  --foreground: #000080; /* Cambiado a tu color azul oscuro corporativo */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary: var(--color-primary);
+  --color-navy: var(--color-text-navy);
+  --color-accent: var(--color-accent-red);
+  --color-bg-light: var(--color-bg-light);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-navy: #000080;
-  --color-gold: #c7973b;
+}
+
+/* Habilita el desplazamiento suave para el diseño One-Page */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text-navy);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Clase utilitaria para las secciones */
+.section-padding {
+  padding: 4rem 1.5rem;
 }

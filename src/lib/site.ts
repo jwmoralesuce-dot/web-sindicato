@@ -1,9 +1,8 @@
 export const navigationItems = [
-  { label: "Inicio", href: "/" },
-  { label: "Noticias", href: "/noticias" },
-  { label: "Afiliación", href: "/afiliacion" },
-  { label: "Documentación", href: "/documentacion" },
-  { label: "Contacto", href: "/contacto" },
+  { label: "Inicio", href: "#inicio" },
+  { label: "Historia", href: "#historia" },
+  { label: "Comunicados", href: "#comunicados" },
+  { label: "Contacto", href: "#contacto" },
 ];
 
 export const contactInfo = {

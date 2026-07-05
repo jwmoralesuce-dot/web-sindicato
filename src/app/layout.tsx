@@ -24,10 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es" // Cambiado a 'es' para español
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning={true} // <--- ESTO ES LO IMPORTANTE
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   );
 }
